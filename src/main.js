@@ -1,8 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
+import _Vue from "vue";
+import App from "./App.vue";
+/**
+ * @author: tangyu
+ * @Date: 2020-08-12 15:15:26
+ * @description: install提供全局注册方式
+ * @param {type}
+ * @return {type}
+ */
 
-Vue.config.productionTip = false
+App.install = (Vue) => {
+  if (!Vue) {
+    window.Vue = Vue = _Vue;
+  }
+  Vue.component(App.name, App);
+};
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export default App;
