@@ -8,11 +8,11 @@ import App from "./App.vue";
  * @return {type}
  */
 
-App.install = (Vue) => {
-  if (!Vue) {
-    window.Vue = Vue = _Vue;
-  }
-  Vue.component(App.name, App);
-};
+// App.install = (Vue) => {
+//   if (!Vue) {
+//     window.Vue = Vue = _Vue;
+//   }
+//   Vue.component(App.name, App);
+// };
 
 export default App;

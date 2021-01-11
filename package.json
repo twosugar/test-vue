@@ -1,6 +1,6 @@
 {
   "name": "@sugarfish/test-vue",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "main": "./lib/bundle.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
